@@ -41,6 +41,9 @@
 html{
     width: 100vw;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main_container{
@@ -259,7 +262,6 @@ button:hover{
 @media only screen and (min-width: 1080px){
 
     .main_container{
-        margin-top: 250px;
         display: flex;
         flex-direction: row;
         width: 736px;
