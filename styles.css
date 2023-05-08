@@ -51,18 +51,6 @@ html{
     margin-bottom: 20px;
 }
 
-@media only screen and (min-width: 1080px){
-    .main_container{
-        margin-top: 230px;
-        display: flex;
-        flex-direction: row;
-        width: 736px;
-        height: 512px;
-        border-top-left-radius: 20px;
-        border-bottom-left-radius: 20px;
-    }
-}
-
 .section_1{
     height: 355px;
     width: 100%;
@@ -73,16 +61,9 @@ html{
     padding-right: 60px;
 }
 
-@media only screen and (min-width: 1080px){
-    .section_1{
-        height: 100%;
-        width: 100%;
-        border-radius: 20px;
-    }
-}
-
 .title_section_1{
     text-align: center;
+    font-size: 20px;
     color: var(--Light_lavender);
     padding-top: 23px;
     padding-bottom: 23px;
@@ -92,6 +73,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     width: 140px;
     height: 140px;
     margin: 0 auto;
@@ -101,7 +83,7 @@ html{
 }
 
 .circle_section_1 .text_circle h1{
-    font-size: 50px;
+    font-size: 53px;
     color: var(--White);
 }
 
@@ -118,6 +100,7 @@ html{
 }
 
 .text_section_1 h1{
+    font-size: 25px;
     color: var(--White);
     padding-bottom: 17px;
 }
@@ -264,8 +247,6 @@ button:hover{
     background: linear-gradient(180deg, var(--Light_slate_blue), var(--Light_royal_blue));
 }
 
-
-
 .footer{
     font-size: 8px; text-align: center;
 }
@@ -273,4 +254,48 @@ button:hover{
 .footer a {
     color: hsl(228, 45%, 44%);
     text-decoration: none;
+}
+
+@media only screen and (min-width: 1080px){
+
+    .main_container{
+        margin-top: 250px;
+        display: flex;
+        flex-direction: row;
+        width: 736px;
+        height: 512px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;    
+    }    
+
+    .section_1{
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .title_section_1{
+        margin-bottom: 10px;
+    }
+
+    .circle_section_1{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 35px;
+    }
+
+    .circle_section_1 .text_circle h1{
+        font-size: 60px;
+        color: var(--White);
+    }
+
+    .text_section_1 h1 {
+        font-size: 30px;
+    }
+
+    .text_section_1 p {
+        font-size: 18px;
+    }
 }
